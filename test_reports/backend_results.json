@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "tests_run": 14,
+    "tests_passed": 14,
+    "success_rate": "100.0%"
+  },
+  "results": [
+    {
+      "test": "Root Endpoint",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:53:59.360986"
+    },
+    {
+      "test": "Get Case Studies",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:53:59.483008"
+    },
+    {
+      "test": "Get Case Study Detail",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:53:59.590327"
+    },
+    {
+      "test": "Get Blog Posts",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:53:59.764940"
+    },
+    {
+      "test": "Get Blog Post Detail",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:53:59.875653"
+    },
+    {
+      "test": "Get Careers",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:00.006811"
+    },
+    {
+      "test": "Get Career Detail",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:00.149908"
+    },
+    {
+      "test": "Contact Form Submission",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:00.551138"
+    },
+    {
+      "test": "Demo Request Submission",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:00.918978"
+    },
+    {
+      "test": "Admin Login",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:01.259196"
+    },
+    {
+      "test": "Auth Verification",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:02.430617"
+    },
+    {
+      "test": "Dashboard Stats",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:02.537370"
+    },
+    {
+      "test": "Get Contact Submissions",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:02.657400"
+    },
+    {
+      "test": "Get Demo Requests",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-03-17T03:54:02.801644"
+    }
+  ]
+}
