@@ -101,40 +101,40 @@ const Careers = () => {
               <p className="text-sm text-muted">Check back soon or send your resume to careers@nexora.systems</p>
             </div>
           ) : (
-            <div className="border-t border-border">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-l border-t border-border">
               {jobs.map((job, index) => (
                 <div
                   key={job.id}
-                  className="border-b border-border p-8 md:p-12 hover:bg-secondary/30 transition-colors duration-300"
+                  className="md:col-span-12 p-8 md:p-12 border-r border-b border-border hover:bg-secondary/30 transition-colors duration-300 group"
                   data-testid={`job-item-${index}`}
                 >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-medium mb-2" data-testid={`job-title-${index}`}>{job.title}</h3>
-                      <div className="flex flex-wrap gap-4 text-sm text-muted">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                    <div className="flex-1">
+                      <h3 className="text-3xl font-semibold mb-3 group-hover:text-primary transition-colors" data-testid={`job-title-${index}`}>{job.title}</h3>
+                      <div className="flex flex-wrap gap-4 text-sm uppercase tracking-[0.2em] text-muted mb-4">
                         <span className="flex items-center" data-testid={`job-department-${index}`}>
-                          <Briefcase size={16} className="mr-2" />
+                          <Briefcase size={14} className="mr-2" />
                           {job.department}
                         </span>
                         <span className="flex items-center" data-testid={`job-location-${index}`}>
-                          <MapPin size={16} className="mr-2" />
+                          <MapPin size={14} className="mr-2" />
                           {job.location}
                         </span>
                         <span className="flex items-center" data-testid={`job-type-${index}`}>
-                          <Clock size={16} className="mr-2" />
+                          <Clock size={14} className="mr-2" />
                           {job.type}
                         </span>
                       </div>
+                      <p className="text-muted leading-relaxed text-base" data-testid={`job-description-${index}`}>{job.description}</p>
                     </div>
                     <a
                       href="/contact"
-                      className="mt-4 md:mt-0 inline-flex h-10 px-6 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 active:scale-95 items-center"
+                      className="mt-6 md:mt-0 md:ml-8 inline-flex h-12 px-8 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 active:scale-95 items-center whitespace-nowrap"
                       data-testid={`job-apply-btn-${index}`}
                     >
                       Apply Now
                     </a>
                   </div>
-                  <p className="text-muted leading-relaxed mb-4" data-testid={`job-description-${index}`}>{job.description}</p>
                 </div>
               ))}
             </div>
