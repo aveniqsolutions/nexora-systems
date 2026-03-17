@@ -111,7 +111,7 @@ const Navbar = () => {
             <Link
               to="/demo"
               onClick={() => setMobileMenuOpen(false)}
-              className="h-12 px-6 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 flex items-center justify-center"
+              className="h-12 px-6 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 flex items-center justify-center leading-none"
               data-testid="mobile-demo-cta"
             >
               Request Demo
