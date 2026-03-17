@@ -69,13 +69,6 @@ const Navbar = () => {
                 </Link>
               ) : null}
 
-              <Link
-                to="/demo"
-                className="hidden md:block h-10 px-6 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 active:scale-95 flex items-center"
-                data-testid="demo-cta"
-              >
-                Request Demo
-              </Link>
 
               {/* Mobile Menu Button */}
               <button
